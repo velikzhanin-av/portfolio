@@ -21,7 +21,7 @@ export const Main = () => {
 
 export const StyledMain = styled.div`
   background-color: #484848;
-  height: 100vh;
+  min-height: 100vh;
 `
 
 export const Photo = styled.img`
