@@ -17,13 +17,22 @@ export const Projects = () => {
                 </SecondarySectionTitle>
             </FlexWrapper>
             <FlexWrapper justify={"center"} wrap={"wrap"}>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
-                <Card src={GreenImg} title={"green-corp-landing"}/>
+                <Card src={GreenImg} title={"green-corp-landing"}
+                      description={"This is sample project description random things are here in description " +
+                          "This is sample project lorem ipsum generator for dummy content"}/>
+                <Card src={GreenImg} title={"green-corp-landing"}
+                      description={"This is sample project description random things are here in description " +
+                          "This is sample project lorem ipsum generator for dummy content"}/>
+                <Card src={GreenImg} title={"green-corp-landing"}
+                      description={"This is sample project description random things are here in description " +
+                          "This is sample project lorem ipsum generator for dummy content"}/>
+                <Card src={GreenImg} title={"green-corp-landing"}
+                      description={"This is sample project description random things are here in description " +
+                          "This is sample project lorem ipsum generator for dummy content"}/>
+                <Card src={GreenImg} title={"green-corp-landing"}
+                      description={"This is sample project description random things are here in description " +
+                          "This is sample project lorem ipsum generator for dummy content"}/>
+
 
             </FlexWrapper>
         </StyledProject>
