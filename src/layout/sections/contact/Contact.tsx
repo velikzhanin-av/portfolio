@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import {SectionTitle} from "../../../components/SectionTitle";
+import {StuledButton} from "../../../components/Button";
+
 
 export const Contact = () => {
     return (
@@ -13,6 +15,12 @@ export const Contact = () => {
                 <StyledMail>
                     a.velikzhanin90@gmail.com
                 </StyledMail>
+                <StyledForm>
+                    <Field placeholder={"name"}/>
+                    <Field placeholder={"mail"}/>
+                    <Field placeholder={"message"} as={"textarea"}/>
+                    <StuledButton type={"submit"}>Send message</StuledButton>
+                </StyledForm>
             </FlexWrapper>
         </StyledContact>
     );
@@ -27,5 +35,19 @@ const StyledMail = styled.h2`
   color: aqua;
   font-family: "Lucida Console";
 `
+
+const StyledForm = styled.form`
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 280px auto 0 auto;
+  gap: 10px;
+`
+
+const Field = styled.input`
+  
+`
+
 
 
