@@ -27,13 +27,11 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-  background-color: #3a3a3a;
   min-height: 100vh;
 `
 
 const StyledMail = styled.h2`
-  color: aqua;
-  font-family: "Lucida Console";
+
 `
 
 const StyledForm = styled.form`

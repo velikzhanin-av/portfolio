@@ -30,7 +30,6 @@ export const TechStack = (props: TechStackPropsType) => {
 };
 
 const StyledTechStack = styled.section`
-  background-color: #3a3a3a;
   height: 100vh;
 `
 
