@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: ${theme.colors.font};;
   }
   
   a {
@@ -41,10 +42,4 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.secondaryBg};
   }
   
-  h1, h2, h3, h4, h5, span {
-    color: ${theme.colors.font};
-  }
-
-
-
 `

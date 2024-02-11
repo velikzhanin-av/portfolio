@@ -22,7 +22,7 @@ const StyledCard = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-color: aquamarine;
+  background-color: #363636;
   min-height: 500px;
   max-width: 375px;
   border-radius: 10px;
