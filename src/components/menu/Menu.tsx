@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 type MenuPropsType = {
     items: Array<string>
@@ -11,9 +12,9 @@ export const Menu = (props: MenuPropsType) => {
             <ul>
                 {props.items.map((item, index) => {
                     return (
-                    <li key={index} >
-                        <a href="">{item}</a>
-                    </li>
+                        <li key={index}>
+                            <Link href="">{item}</Link>
+                        </li>
                     )
                 })}
             </ul>
@@ -26,5 +27,12 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 50px;
     margin-right: 50px;
+  }
+`
+const Link = styled.a`
+  font-size: 25px;
+  
+  &:hover {
+    color: ${theme.colors.accent};
   }
 `

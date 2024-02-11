@@ -4,20 +4,22 @@ import {Menu} from "../../components/menu/Menu";
 import {menu} from "../header/Header";
 import {Icon} from "../../components/icons/icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {Container} from "../../components/Container";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper justify={"space-between"}>
-                <Menu items={menu}/>
-                <Copyright>© 2024 Aleksandr Velikzhanin, All Rights Reserved.</Copyright>
-                <Links>
-                    <Icon height={'50'} width={'50'} iconId={"github"}/>
-                    <Icon height={'50'} width={'50'} iconId={"linkedin"}/>
-                    <Icon height={'50'} width={'50'} iconId={"telegram"}/>
-                </Links>
-
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justify={"space-between"}>
+                    <Menu items={menu}/>
+                    <Copyright>© 2024 Aleksandr Velikzhanin, All Rights Reserved.</Copyright>
+                    <Links>
+                        <Icon height={'50'} width={'50'} iconId={"github"}/>
+                        <Icon height={'50'} width={'50'} iconId={"linkedin"}/>
+                        <Icon height={'50'} width={'50'} iconId={"telegram"}/>
+                    </Links>
+                </FlexWrapper>
+            </Container>
         </StyledFooter>
     );
 };
