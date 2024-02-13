@@ -33,6 +33,6 @@ const Link = styled.a`
   font-size: 25px;
   
   &:hover {
-    color: ${theme.colors.accent};
+    color: ${theme.colors.font};
   }
 `

@@ -35,6 +35,10 @@ const StyledImg = styled.img`
   height: 260px;
   border-radius: 10px;
   object-fit: cover;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 `
 
 const StyledTitle = styled.h3`
