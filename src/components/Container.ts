@@ -6,5 +6,5 @@ export const Container = styled.div`
   max-width: 1200px;
   padding: 10px;
   margin: 0 auto;
-  border: 1px solid red;
+  //border: 1px solid red;
 `
