@@ -10,7 +10,7 @@ import {Projects} from "./layout/sections/projects/Projects";
 import {Contact} from "./layout/sections/contact/Contact";
 import {Footer} from "./layout/footer/Footer";
 
-const skills = ["html", "css", "js", "typescript", "react", "redux", "git", "github", "react",]
+const skills = ["html", "css", "js", "typescript", "react", "redux", "git", "github", "react", "css", "html", "css", "js", "typescript", "react",]
 
 function App() {
     return (
