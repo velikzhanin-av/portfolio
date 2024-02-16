@@ -11,9 +11,9 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
-                        <StyledHello>Hi There</StyledHello>
-                        <StyledTitle>My name is<br/> Aleksandr Velikzhanin</StyledTitle>
-                        <StyledName>A Frontend Developer</StyledName>
+                        <StyledHello>Hi There<br/>My name is</StyledHello>
+                        <StyledName>Aleksandr Velikzhanin</StyledName>
+                        <StyledTitle>A Frontend Developer</StyledTitle>
                     </div>
                     <Photo src={photo}/>
                 </FlexWrapper>
@@ -34,17 +34,19 @@ export const Photo = styled.img`
     //justify-content: space-between;
 `;
 
-export const StyledTitle = styled.h1`
+export const StyledName = styled.h1`
     font-family: Poppins;
     font-size: 50px;
     font-weight: 700;
     line-height: 70px;
     letter-spacing: -1px;
     text-align: left;
-    color: ${theme.colors.accent};
+    background: -webkit-linear-gradient(30deg, #00C0FD, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
-export const StyledName = styled.h2`
+export const StyledTitle = styled.h2`
     font-family: Poppins;
     font-size: 50px;
     font-weight: 700;
