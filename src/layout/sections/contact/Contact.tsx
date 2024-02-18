@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {StuledButton} from "../../../components/Button";
+import {theme} from "../../../styles/Theme";
 
 
 export const Contact = () => {
@@ -31,7 +32,13 @@ const StyledContact = styled.section`
 `
 
 const StyledMail = styled.h2`
-
+  color: ${theme.colors.accent};
+  font-family: "Poppins", "sans-serif";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 70px;
 `
 
 const StyledForm = styled.form`

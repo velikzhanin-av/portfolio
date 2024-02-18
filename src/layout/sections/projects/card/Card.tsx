@@ -42,7 +42,7 @@ const StyledImg = styled.img`
 `
 
 const StyledTitle = styled.h3`
-
+  margin: 10px;  
 `
 const StyledDescription = styled.div`
 

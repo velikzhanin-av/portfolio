@@ -5,12 +5,13 @@ import {menu} from "../header/Header";
 import {Icon} from "../../components/icons/icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Container} from "../../components/Container";
+import {theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} align={"center"}>
                     <Menu items={menu}/>
                     <Copyright>© 2024 Aleksandr Velikzhanin, All Rights Reserved.</Copyright>
                     <Links>
@@ -25,7 +26,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: beige;
+  background-color: ${theme.colors.primaryBg}
 `
 
 const Copyright = styled.small`
