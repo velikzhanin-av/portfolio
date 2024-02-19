@@ -15,7 +15,7 @@ export const Main = () => {
                         <StyledName>Aleksandr Velikzhanin</StyledName>
                         <StyledTitle>A Frontend Developer</StyledTitle>
                     </div>
-                    <Photo src={photo}/>
+                    <Photo alt={"my-photo"} src={photo}/>
                 </FlexWrapper>
             </Container>
         </StyledMain>
