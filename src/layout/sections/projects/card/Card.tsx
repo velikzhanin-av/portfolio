@@ -35,6 +35,7 @@ const StyledImg = styled.img`
   height: 260px;
   border-radius: 10px;
   object-fit: cover;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.02);

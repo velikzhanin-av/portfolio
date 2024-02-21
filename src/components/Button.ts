@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
-export const StuledButton = styled.button`
-  max-width: 150px;
-  margin: 0 auto;
+export const StyledButton = styled.button`
+    width: 100%;
+    height: 45px;
+  margin: 30px auto 0;
     cursor: pointer;
-    //color: white;
-    //background-color: blue;
+    border-radius: 6px;
+    background-color: ${theme.colors.accent};
+    color: ${theme.colors.font};
 `

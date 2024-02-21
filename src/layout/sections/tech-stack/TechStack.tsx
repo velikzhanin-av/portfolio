@@ -11,7 +11,7 @@ type TechStackPropsType = {
 
 export const TechStack = (props: TechStackPropsType) => {
     return (
-        <StyledTechStack>
+        <StyledTechStack id={"Tech Stack"}>
             <Container>
                 <FlexWrapper justify={"center"} direction={"column"} align={"center"}>
                     <SectionTitle>
