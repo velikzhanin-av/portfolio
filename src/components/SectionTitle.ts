@@ -18,6 +18,6 @@ export const SecondarySectionTitle = styled.h3`
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 70px;
 `

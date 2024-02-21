@@ -32,11 +32,12 @@ const StyledContact = styled.section`
 `
 
 const StyledMail = styled.h2`
-  color: ${theme.colors.accent};
+    background-image: linear-gradient(30deg, #00C0FD, #E70FAA);
+    -webkit-background-clip: text;
+    color: transparent;
   font-family: "Poppins", "sans-serif";
   font-size: 48px;
   font-weight: 700;
-  line-height: 26px;
   text-align: center;
   margin-top: 70px;
 `

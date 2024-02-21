@@ -41,9 +41,9 @@ export const StyledName = styled.h1`
   line-height: 70px;
   letter-spacing: -1px;
   text-align: left;
-  background: -webkit-linear-gradient(30deg, #00C0FD, #E70FAA);
+  background-image: linear-gradient(30deg, #00C0FD, #E70FAA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 `
 
 export const StyledTitle = styled.h2`
