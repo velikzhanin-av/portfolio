@@ -4,6 +4,7 @@ import photo from "../../../assets/images/photo.jpg";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
     return (
@@ -12,7 +13,13 @@ export const Main = () => {
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
                         <StyledHello>Hi There<br/>My name is</StyledHello>
-                        <StyledName>Aleksandr Velikzhanin</StyledName>
+                        <StyledName>                        <Typewriter
+                            options={{
+                                strings: ['Aleksandr Velikzhanin'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        /></StyledName>
                         <StyledTitle>A Frontend Developer</StyledTitle>
                     </div>
                     <Photo alt={"my-photo"} src={photo}/>
@@ -63,4 +70,6 @@ export const StyledHello = styled.span`
   letter-spacing: -1px;
   text-align: left;
 `
+
+
 
