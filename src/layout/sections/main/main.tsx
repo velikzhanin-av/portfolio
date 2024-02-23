@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
     return (
@@ -13,7 +14,7 @@ export const Main = () => {
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
                         <StyledHello>Hi There<br/>My name is</StyledHello>
-                        <StyledName>                        <Typewriter
+                        <StyledName> <Typewriter
                             options={{
                                 strings: ['Aleksandr Velikzhanin'],
                                 autoStart: true,
@@ -22,7 +23,17 @@ export const Main = () => {
                         /></StyledName>
                         <StyledTitle>A Frontend Developer</StyledTitle>
                     </div>
-                    <Photo alt={"my-photo"} src={photo}/>
+                    <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.2}
+                        gyroscope={true}
+                    >
+                        <Photo className="inner-element" alt={"my-photo"} src={photo}/>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </StyledMain>
