@@ -6,6 +6,7 @@ import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
+import {StyledButton} from "../../../components/Button";
 
 export const Main = () => {
     return (
@@ -21,7 +22,8 @@ export const Main = () => {
                                 loop: true,
                             }}
                         /></StyledName>
-                        <StyledTitle>A Frontend Developer</StyledTitle>
+                        <StyledTitle>A Frontend Developer<Span>1234</Span></StyledTitle>
+                        <StyledButton>Download CV</StyledButton>
                     </div>
                     <Tilt
                         className="parallax-effect-img"
@@ -29,7 +31,7 @@ export const Main = () => {
                         tiltMaxAngleY={40}
                         perspective={800}
                         transitionSpeed={1500}
-                        scale={1.2}
+                        scale={1.1}
                         gyroscope={true}
                     >
                         <Photo className="inner-element" alt={"my-photo"} src={photo}/>
@@ -52,7 +54,7 @@ export const Photo = styled.img`
   border: 10px solid ${theme.colors.accent};
 `
 
-export const StyledName = styled.h1`
+export const StyledName = styled.h2`
   font-family: "Popins", "sans-serif";
   font-size: 50px;
   font-weight: 700;
@@ -64,7 +66,7 @@ export const StyledName = styled.h1`
   color: transparent;
 `
 
-export const StyledTitle = styled.h2`
+export const StyledTitle = styled.h1`
   font-family: "Popins", "sans-serif";
   font-size: 50px;
   font-weight: 700;
@@ -82,5 +84,7 @@ export const StyledHello = styled.span`
   text-align: left;
 `
 
-
+export const Span = styled.span`
+ opacity: 0;
+`
 
