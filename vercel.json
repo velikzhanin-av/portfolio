@@ -1,1 +1,16 @@
-
+{
+  "version": 2,
+  "name": "back-lesson-1",
+  "builds": [
+    {
+      "src": "src/index.tsx",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/index.tsx"
+    }
+  ]
+}
